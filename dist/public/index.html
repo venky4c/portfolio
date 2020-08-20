@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venky</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../src/main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" id="root">
+        <img src="../src/img/venky-tag.JPG" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <!-- <span class="hamburger"></span> -->
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+      <div class="logo" id="root">
+        <img src="img/venky.JPG" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Venkateswar B</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img
+        src="img/venky-01.jpg"
+        alt="a picture of Venky smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>RestCountriesAPI</h3>
+          <p>
+            This project was developed using React Redux and Saga as middleware.
+            The user can search for a particular country, or see all the
+            countries in a particular continent. Dynamic routing was implemented
+            to navigate to the respective country details. The data is fetched
+            using async-await features from an external API.
+          </p>
+          <p class="proj1">
+            <span class="link1">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <a
+              href="https://hopeful-lovelace-275308.netlify.app/"
+              class="proj-link1"
+              >Live Link</a
+            >
+          </p>
+          <p class="git1">
+            <span class="git1">
+              <i class="fab fa-github-square"></i>
+            </span>
+            <a
+              href="https://github.com/venky4c/rest-countries-api"
+              class="git-link1"
+              >Code</a
+            >
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Static Job Landing page</h3>
+
+          <p class="proj2">
+            <span class="link2">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <a href="https://gifted-borg-fb4add.netlify.app/" class="proj-link2"
+              >Live Link</a
+            >
+          </p>
+          <p class="git2">
+            <i class="fab fa-github-square"></i>
+            <a
+              href="https://github.com/venky4c/static-job-listings"
+              class="git-link2"
+              >Code</a
+            >
+          </p>
+          <p>
+            The data has nesting upto 4 levels and it was a challenge to filter
+            data based on user input selection based on intermediate levels of
+            data nesting. I have used arrays as data type for state management
+            and ensured the manipulation of data is pure without side effects by
+            using spread operator. I have also used callback functions for
+            lifting the state up to the parent component while removing of
+            buttons inside the search-bar.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>URL Shortening API</h3>
+          <p>
+            Integrates with the rel.ink URL shortening API and lets you play
+            with browser storage in this landing page project. This project was
+            implemented in React using React hooks like useState, useEffect.
+            Local Storage functionality was used to make the browser retain
+            state even after refresh.
+          </p>
+          <p class="proj2">
+            <span class="link2">
+              <i class="fas fa-external-link-alt"></i>
+            </span>
+            <a
+              href="https://practical-mcclintock-c961cd.netlify.app/"
+              class="proj-link2"
+              >Live Link</a
+            >
+          </p>
+          <p class="git2">
+            <i class="fab fa-github-square"></i>
+            <a
+              href="https://github.com/venky4c/url-shortening-api-master"
+              class="git-link2"
+              >Code</a
+            >
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">I believe as a</h2>
+      <p class="section__subtitle section__subtitle--about">
+        front-end developer
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          that there is an ocean of things to learn, and one should always be
+          happy and willing to learn. Well, I could not find a better picture to
+          convey the same, :-).
+        </p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </div>
+
+      <img src="img/venky-02.jpg" alt="Venky in Pondy" class="about-me__img" />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of Projects
+      </p>
+      <!-- <div class="portfolio">
+        <a class="portfolio-item" href="#one!"><img   src="/img/portfolio-1.jpg"></a>
+        <a class="portfolio-item" href="#two!"><img   src="/img/portfolio-08.jpg"></a>
+        <a class="portfolio-item" href="#three!"><img src="/img/portfolio-03.jpg"></a>
+        <a class="portfolio-item" href="#four!"><img  src="/img/portfolio-04.jpg"></a>
+        <a class="portfolio-item" href="#five!"><img  src="/img/portfolio-05.jpg"></a>
+      </div> -->
+      <div class="portfolio">
+        <a href="#" class="portfolio__item">
+          <img src="/img/portfolio-1.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:venky4c@gmail.com" class="footer__link">hello@venky4c</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://edabit.com/user/Mhi2m6LSZfJSx2L5A"
+          >
+            <i class="edabit-i">
+              <img src="./img/edabit.JPG" alt="" class="edabit"
+            /></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://dribbble.com">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/venky4m">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/venky4c">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
